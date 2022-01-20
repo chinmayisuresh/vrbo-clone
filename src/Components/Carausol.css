@@ -1,0 +1,33 @@
+.sli{
+  padding: 20px 0;
+    background-color: #e6e6e6;
+    /* text-align: center; */
+}
+.sli h2{
+    width: 82%;
+    margin: 20px auto;
+    /* margin: 20px; */
+}
+.sli>div{
+    /* background-color: blueviolet; */
+    margin: auto;
+    width: 82%;
+    text-align: center;
+
+    /* border: 2px solid white; */
+}
+
+.sli-item{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    /* margin: 10px; */
+    box-sizing: border-box;
+
+}
+.sli-item img{
+    width: 100%;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}

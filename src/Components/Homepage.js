@@ -45,6 +45,8 @@ export default function Homepage() {
       <div className="privacy"></div>
       <div className="property"></div>
       <div className="info"></div>
+
+      <div className="slide"></div>
     </div>
   );
 }

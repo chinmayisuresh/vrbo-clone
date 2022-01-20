@@ -12,7 +12,7 @@
 
 .family{
     width: 90%;
-    margin: -5% auto;
+    margin: -5% auto auto auto;
     background-color: rgb(255, 255, 255);
     padding: 2.5% 5%;
     box-sizing: border-box;
@@ -52,7 +52,10 @@
     border-radius: 3px;
     object-fit: cover;
     object-position: center center;
+}
+.family-image img:hover{
 
+    opacity: 80%;
 }
 
 .family-image > div:nth-child(2){
@@ -70,6 +73,8 @@
     box-sizing: border-box;
     position: relative;
 }
+
+
 
 @media only screen and (max-width: 900px) {
     .inp{

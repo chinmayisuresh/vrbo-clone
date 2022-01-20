@@ -1,5 +1,4 @@
 import "./App.css";
-import Carausol from "./Components/Carausol";
 import Homepage from "./Components/Homepage";
 import NavBar from "./Components/NavBar";
 
@@ -8,7 +7,6 @@ function App() {
     <div>
       <NavBar />
       <Homepage />
-      <Carausol />
     </div>
   );
 }

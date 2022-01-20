@@ -270,4 +270,15 @@
           left: 0;
           width: 200%;
       }
+      .fitt{
+          width: 100%;
+      }
+      .family{
+        padding: 5% 2%;
+      }
+.family-image p {
+font-size: 12px;
+position: static;
+background-color: #4d4e50;
+}
 }

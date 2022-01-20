@@ -6,6 +6,7 @@ import dog from "./Images/dog.jpg";
 import pool from "./Images/pool.jpg";
 import house from "./Images/house.jpg";
 import house1 from "./Images/house1.jpg";
+import Carausol from "./Carausol";
 
 export default function Homepage() {
   const [count, setCount] = useState(0);
@@ -108,7 +109,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-
+<Carausol/>
       <div className="type"></div>
       <div className="privacy"></div>
       <div className="property"></div>

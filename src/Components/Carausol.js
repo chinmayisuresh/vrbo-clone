@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Carausol.css";
 import Slider from "react-slick";
 import houses from "./Images/houses.jpg";
@@ -38,22 +38,34 @@ export default function Carausol() {
     townhouses,
   ];
 
+const [toShow, setToShow] = useState(4);  
+const [toScroll, setToScroll] = useState(4);  
+const scwidth = ()=>{
+    if (window.innerWidth <= 600 ) {
+      setToShow(1)
+      setToScroll(1)
+    }
+  }
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: toShow,
+    slidesToScroll: toScroll,
   };
 
+  
+
   return (
-    <div className="sli">
+    <div onLoad={scwidth} className="sli">
+      
       <h2> Find spaces that suit your style </h2>
       <Slider {...settings}>
        
-        {arr.map((e) => (
-          <div className="sli-item">
-            <img src={e} alt="" />
+        {arr.map((e,i) => (
+          <div key={i} className="sli-item">
+            <img  src={e} alt="" />
             <p>name</p>
           </div>
         ))}
